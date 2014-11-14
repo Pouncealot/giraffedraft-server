@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html ng-app="giraffeDraft">
+<html ng-app="gd">
 	<head>
 		<meta charset="utf-8" />
-		<title> Giraffe Draft </title>
+		<title> Giraffe Site </title>
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
 	</head>
 	<body>
 		<h1> Giraffe Draft </title>
 
-		<div ui-view>
-		</div>
+		<div ui-view></div>
 
 		<script src="./bower_components/angular/angular.js"></script>
+		<script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+		<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="./bower_components/foundation/foundation.js"></script>
 
+		<script src="./controllers/home/home.js"></script>
 		<script src="app.js"></script>
 
 		<!-- Angulah scripts go here. -->

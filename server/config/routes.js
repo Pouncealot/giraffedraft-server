@@ -6,7 +6,6 @@ module.exports = function (app, express) {
 
 	// Use the client folder as the root public folder.
 	// This allows client/index.html to be used on the / route.
-	app.use(express.static(__dirname + '/../../client'));
 
 	app.use(function(req, res, next) {
 		res.header("Access-Control-Allow-Origin", '*');
@@ -41,4 +40,7 @@ module.exports = function (app, express) {
 			res.send(JSON.stringify(picks));
 		})
 	});
+
+	app.use(express.static(__dirname + '/../../client'));
+
 };
